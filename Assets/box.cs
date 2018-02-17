@@ -6,6 +6,7 @@ public class box : MonoBehaviour {
 
 	float rotationX;
 	float rotationY;
+	float rotationZ;
 	// Use this for initialization
 	void Start () {
 		
@@ -15,6 +16,7 @@ public class box : MonoBehaviour {
 	void Update () {
 		rotationX += Time.deltaTime * 100;
 		rotationY += Time.deltaTime * 180;
+		rotationZ += Time.deltaTime * 250;
 		transform.rotation = Quaternion.Euler (rotationX, rotationY, 0);
 	}
 }
